@@ -1,4 +1,4 @@
-# Front End
+# Front End Development
 
 ![Repo](https://img.shields.io/badge/repo-front--end-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -56,22 +56,3 @@ Other topics include:
 * Gain practical experience with libraries and frameworks (jQuery, Vue.js, React)
 * Document experiments, workflows, and reflections
 * Build a solid foundation for full stack development
-
----
-
-## Learning Sources
-
-Currently following: [Kelas Fullstack](https://www.kelasfullstack.id/) as the main structured learning path.
-
-Complemented by:
-
-* Official documentation of HTML, CSS, JavaScript, Bootstrap, Tailwind, Sass, Vue.js, React
-* FreeCodeCamp, MDN Web Docs, W3Schools
-* Online tutorials and technical blogs
-* Personal projects and experiments
-* Refactored code and reusable snippets
-* Extended experiments beyond tutorials
-
----
-
-This repository is a living document and will continue to evolve alongside my learning. It serves as my personal learning tracker and reflective space for Front End Development.
