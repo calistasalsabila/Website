@@ -11,6 +11,12 @@ Welcome! This repository is a personal documentation space for my journey in lea
 
 This repository is organized into two main folders: `frontend/` and `backend/`. Each folder contains topic-based subfolders, which may vary in structure depending on the subject (e.g., code snippets, experiments, projects, or notes).
 
+Inside each topic folder, you may find:
+
+* `code/` – for implementation and example code
+* `material/` – for learning materials, tutorials, references
+* `notes/` – for personal notes, reflections, and summaries
+
 ### Front-End Topics
 
 * Git
@@ -41,14 +47,11 @@ This repository is organized into two main folders: `frontend/` and `backend/`. 
 
 ## Goals
 
-* Master the fundamentals of web development (HTML, CSS, JavaScript)
-* Explore responsive design and CSS architecture
-* Understand and use modern CSS frameworks (Bootstrap 5, Tailwind CSS, Sass)
-* Learn asynchronous programming and data fetching (AJAX, Web APIs)
-* Apply UI/UX principles to create usable and accessible interfaces
-* Gain practical experience with libraries and frameworks (jQuery, Vue.js, React)
-* Document experiments, workflows, and reflections
-* Build a solid foundation for full stack development
+* Master core web technologies: HTML, CSS, JavaScript, and responsive design
+* Build interactive and user-friendly interfaces using UI/UX principles and modern Front-End frameworks (React, Vue.js)
+* Understand server-side development and databases: Node.js, Express, PHP, MySQL, MongoDB
+* Integrate Front-End and Back-End: implement full stack applications, RESTful APIs, and authentication
+* Document, experiment, and improve: reflect on learning, refactor code, and maintain reusable projects/snippets
 
 ---
 
