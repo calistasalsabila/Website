@@ -3,9 +3,7 @@
 ![Repo](https://img.shields.io/badge/repo-front--end-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Last Commit](https://img.shields.io/github/last-commit/calistasalsabila/front-end)
-![Issues](https://img.shields.io/github/issues/calistasalsabila/front-end)
-![Stars](https://img.shields.io/github/stars/calistasalsabila/front-end)
+
 
 
 Welcome! This repository is a structured documentation space for my journey in learning **Front End Development**—from fundamental web technologies to modern frameworks and user interface design.
