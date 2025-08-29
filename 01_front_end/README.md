@@ -3,11 +3,10 @@
 ![Repo](https://img.shields.io/badge/repo-front--end-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Last Commit](https://img.shields.io/github/last-commit/USERNAME/front-end)
-![Issues](https://img.shields.io/github/issues/USERNAME/front-end)
-![Stars](https://img.shields.io/github/stars/USERNAME/front-end)
+![Last Commit](https://img.shields.io/github/last-commit/calistasalsabila/front-end)
+![Issues](https://img.shields.io/github/issues/calistasalsabila/front-end)
+![Stars](https://img.shields.io/github/stars/calistasalsabila/front-end)
 
-> Replace `USERNAME/front-end` with your GitHub handle and repository slug after creating the repo.
 
 Welcome! This repository is a structured documentation space for my journey in learning **Front End Development**—from fundamental web technologies to modern frameworks and user interface design.
 
@@ -18,7 +17,6 @@ Welcome! This repository is a structured documentation space for my journey in l
 * [Repository Structure](#repository-structure)
 * [Goals](#goals)
 * [Learning Sources](#learning-sources)
-* [Beyond the Basics](#beyond-the-basics)
 
 ---
 
