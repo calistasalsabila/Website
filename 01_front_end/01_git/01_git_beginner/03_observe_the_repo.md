@@ -121,7 +121,7 @@ Example output:
 
 ```
 commit 4e3a1d2
-Author: Alice <alice@example.com>
+Author: Alice <dokja@example.com>
 Date:   Fri Aug 30 14:22 2025
 
     Added login feature
