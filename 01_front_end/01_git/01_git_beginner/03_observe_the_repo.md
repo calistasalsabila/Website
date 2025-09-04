@@ -1,150 +1,153 @@
-# Observing the Repository in Git
+# Working with Branches in Git
 
-Once a repository has been created and files have been committed, you will often need to inspect the state of your project. Git provides several commands to observe changes, history, and contributions. This is crucial for understanding what is happening inside your repository and for collaborating effectively with others.
-
----
-
-## 1. Checking the Status of Files
-
-```bash
-git status
-```
-
-* Displays new, modified, or deleted files that have not yet been committed.
-* Helps you see whether files are staged (ready for commit) or unstaged (not yet added).
-
-Example output:
-
-```
-On branch main
-Changes not staged for commit:
-  modified:   index.html
-Untracked files:
-  new_file.txt
-```
+Branches in Git allow developers to work on different features, bug fixes, or experiments independently without affecting the main project codebase. Branching is one of Git’s most powerful features, enabling parallel development and easy integration.
 
 ---
 
-## 2. Viewing Changes to Files
+## 1. Listing Branches
 
-### Unstaged Changes
-
-```bash
-git diff
-```
-
-* Shows line-by-line changes in files that have been modified but not staged.
-
-### Staged Changes
+### Local Branches
 
 ```bash
-git diff --cached
+git branch
 ```
 
-* Displays the differences between the staged snapshot and the last commit.
+* Displays all local branches.
+* The currently active branch is marked with an asterisk (`*`).
 
-### All Changes (Staged + Unstaged)
+### Local and Remote Branches
 
 ```bash
-git diff HEAD
+git branch -av
 ```
 
-* Compares all current changes (both staged and unstaged) against the last commit.
+* Shows both local and remote branches.
+* Useful to see which branches exist on the remote repository in addition to local ones.
 
 ---
 
-## 3. Comparing Two Commits
+## 2. Switching Between Branches
+
+### Using `git checkout`
 
 ```bash
-git diff commit1 commit2
+git checkout my_branch
 ```
 
-* Shows the differences between two specific commits.
-* Useful for tracking how the project evolved between points in time.
+* Switches to the branch named `my_branch`.
+* Updates the working directory to match the state of that branch.
+* Any uncommitted changes in the current branch must be committed or stashed before switching.
 
 Example:
 
 ```bash
-git diff a1b2c3d 9f8e7d6
+git checkout feature-login
+```
+
+### Using `git switch`
+
+```bash
+git switch my_branch
+```
+
+* A more user-friendly alternative to `git checkout` for switching branches.
+* Performs the same action of updating the working directory to the specified branch.
+
+To create and switch to a new branch in one command:
+
+```bash
+git switch -c new_branch
 ```
 
 ---
 
-## 4. Viewing File History and Authors
-
-### Finding Who Changed a Line
+## 3. Creating a New Branch
 
 ```bash
-git blame [file]
+git branch new_branch
 ```
 
-* Shows line-by-line information of who last modified each line of a file, along with the commit ID.
-* Useful for accountability and debugging.
+* Creates a new branch called `new_branch`.
+* Does not automatically switch to it.
+
+To create and switch in one command:
+
+```bash
+git checkout -b new_branch
+```
+
+Or with the newer command:
+
+```bash
+git switch -c new_branch
+```
+
+---
+
+## 4. Deleting a Branch
+
+```bash
+git branch -d my_branch
+```
+
+* Deletes the branch named `my_branch` locally.
+* Git prevents deletion if the branch has unmerged changes (to avoid data loss).
+* To force deletion:
+
+```bash
+git branch -D my_branch
+```
+
+---
+
+## 5. Merging Branches
+
+Merging integrates changes from one branch into another.
+
+### Example: Merge `branch_a` into `branch_b`
+
+```bash
+git checkout branch_b
+git merge branch_a
+```
+
+* First, switch to the branch that will receive the changes (`branch_b`).
+* Then merge the source branch (`branch_a`) into it.
+
+If there are conflicts, Git will pause and require manual resolution before completing the merge.
+
+---
+
+## 6. Tagging a Commit
+
+```bash
+git tag my_tag
+```
+
+* Creates a tag pointing to the current commit.
+* Tags are commonly used to mark release versions (e.g., `v1.0`, `v2.1`).
 
 Example:
 
 ```bash
-git blame main.py
+git tag v1.0.0
 ```
 
----
-
-## 5. Viewing Commit Details
+To list all tags:
 
 ```bash
-git show [commit]:[file]
+git tag
 ```
-
-* Shows detailed information about a commit.
-* If a file is specified, it displays the file’s state at that commit.
-
-Example:
-
-```bash
-git show 123abc:index.html
-```
-
----
-
-## 6. Viewing Commit History
-
-### Full History
-
-```bash
-git log
-```
-
-* Displays the commit history of the repository.
-* Each entry includes the commit ID, author, date, and commit message.
-
-Example output:
-
-```
-commit 4e3a1d2
-Author: Alice <dokja@example.com>
-Date:   Fri Aug 30 14:22 2025
-
-    Added login feature
-```
-
-### History with Diffs
-
-```bash
-git log -p [file/directory]
-```
-
-* Shows the commit history along with the changes introduced in each commit.
-* If a file or directory is specified, only that path’s history is shown.
 
 ---
 
 ## Summary
 
-* Use `git status` to quickly check file states.
-* Use `git diff` variants to examine changes before committing.
-* Use `git log` to explore commit history.
-* Use `git blame` and `git show` for detailed insight into specific changes.
+* Use `git branch` to view, create, or delete branches.
+* Use `git checkout` or `git switch` to switch between branches.
+* Use `git merge` to combine changes from different branches.
+* Use `git tag` to mark important commits (e.g., releases).
 
-These commands are essential for monitoring progress, identifying issues, and collaborating efficiently in any Git-based project.
+Branching enables multiple workflows simultaneously, making Git an essential tool for collaborative software development.
 
 > 📚 This is part of the GIT beginner chapter.
