@@ -1,4 +1,4 @@
-# Git Learning Materials
+# Git Intermediate – Undoing Changes, Branching, and Collaboration
 
 This document summarizes and explains the key topics covered in the provided Git learning materials. Each section corresponds to one of the lessons, offering detailed explanations, commands, and context for practical use.
 
@@ -92,7 +92,26 @@ The `git reset` command is used to move the HEAD pointer to a previous commit, e
 
   Completely resets HEAD, staging area, and working directory to match the specified commit. All changes are lost.
 
-This command is powerful but must be used with caution, especially with `--hard`.
+### Using `git log --oneline` and Relative References
+
+To simplify finding commits, you can use:
+
+```bash
+git log --oneline
+```
+
+This displays a compact list of commits with short hashes. Instead of copying commit hashes, you can use relative references like:
+
+```bash
+git reset --hard HEAD~1
+```
+
+This resets the repository to one commit before the current HEAD. Similarly:
+
+* `HEAD~2` → two commits before
+* `HEAD~3` → three commits before
+
+This method is convenient when you want to quickly move back without manually entering commit hashes.
 
 ---
 
@@ -238,4 +257,4 @@ This collection of Git lessons covers essential operations for managing reposito
 
 Together, these commands and workflows form the foundation of modern Git usage in software development.
 
-> 📚 This is part of the GIT Intermediate chapter.
+> 📚 This is part of the Git Intermediate chapter.
