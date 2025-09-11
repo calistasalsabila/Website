@@ -126,4 +126,10 @@ feat(parser): add ability to parse arrays
 
 Writing good commits is a habit that improves the quality of software projects. By keeping commits small, meaningful, and consistent with conventions like Conventional Commits, developers create a maintainable and professional codebase. Advanced practices such as signed commits, squashing, and rewording help maintain a clean, trustworthy, and collaborative version history.
 
+
+## Further Reading
+
+For more detailed explanations and visualizations of the neuron in deep learning, refer to the following resource:
+[good commit](https://www.conventionalcommits.org/en/v1.0.0/)
+
 > 📚 This is part of the Git Intermediate chapter.
