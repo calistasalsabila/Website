@@ -238,3 +238,11 @@ Validation provides immediate feedback to the user and reduces server-side proce
 ## Conclusion
 
 Tables and forms are fundamental components of HTML that allow you to present data clearly and gather user input effectively. By mastering semantic table structures and diverse form elements, you can create accessible, user-friendly web in
+
+## Further Reading
+
+For more detailed explanations and visualizations of entity code, refer to the following resource:
+[table html](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table)
+
+
+> 📚 This is part of the HTML chapter.
