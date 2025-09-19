@@ -189,4 +189,10 @@ Example exercise:
 
 Understanding and practicing these concepts will strengthen your ability to write clean, accessible, and maintainable HTML code.
 
+## Further Reading
+
+For more detailed explanations and visualizations of entity code, refer to the following resource:
+[semantic html](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+
+
 > 📚 This is part of the HTML chapter.
