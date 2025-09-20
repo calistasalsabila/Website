@@ -8,13 +8,19 @@
 <body>
     <h1>Formulir Ga Tau ya Random</h1>
     <!-- kalo ga di definisikan methodnya biasanya pakai get  -->
-    <form action="#" method="post">
+     <!-- daftar tu buat nanti ke link daftar kalo misal button di pencet  -->
+    <form action="/daftar" method="post">
         <!-- for sama id samain  -->
          <!-- pake div biar hasilnya ke bawah (block), bisa pakai p atau span  -->
+
+         <!-- button ni tanpe mengirim ke daftar, cm pencet aja  -->
+          <button type="button"> apa ya</button>
         <div>
             <label for="name">Name</label>
             <input type="text" placeholder="Name" id="name">
         </div>
+
+
         
          <div>
             <label for="email">Email</label>
@@ -31,10 +37,11 @@
             <input type="number" placeholder="Number" id="number">
         </div>
         
-        <div>
-            <label for="color">Color</label>
-            <input type="color" id="color">
-        </div>
+      <button>Send</button>
+
+      <button type="submit">sendddd</button>
+      <!-- kalo pake input ubah aja type nya ke button  -->
+      <input type="button" value="Daftar">
         
     </form>
 </body>
