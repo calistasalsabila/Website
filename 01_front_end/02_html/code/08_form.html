@@ -9,11 +9,33 @@
     <h1>Formulir Ga Tau ya Random</h1>
     <!-- kalo ga di definisikan methodnya biasanya pakai get  -->
     <form action="#" method="post">
-        <input type="text" placeholder="Text">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <input type="number" placeholder="Number">
-        <input type="color">
+        <!-- for sama id samain  -->
+         <!-- pake div biar hasilnya ke bawah (block), bisa pakai p atau span  -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" id="name">
+        </div>
+        
+         <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email">
+         </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+        </div>
+        
+        <div>
+            <label for="number">Number</label>
+            <input type="number" placeholder="Number" id="number">
+        </div>
+        
+        <div>
+            <label for="color">Color</label>
+            <input type="color" id="color">
+        </div>
+        
     </form>
 </body>
 </html>
