@@ -171,5 +171,12 @@ Responsive Design Tip:
 
 CSS is the backbone of web presentation. By understanding its core concepts—including how to integrate CSS into HTML, manage colors, style text, and control sizes—you can create visually appealing and maintainable web pages. Mastery comes from continuous practice and exploration of both fundamental and advanced properties.
 
+## Further Reading
+
+For more detailed explanations and visualizations of entity code, refer to the following resource:
+[template code](https://codepen.io/)
+[css reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+
 > 📚 This is part of the CSS chapter.
 
