@@ -1,0 +1,18 @@
+h1{
+    text-align:  center;
+    font-weight: lighter;
+    /* untuk color bisa juga pake hex #  */
+    text-decoration: underline  cyan; 
+
+}
+
+p{
+    text-align: center;
+    line-height: 1.5;
+    /* letter-spacing: -5px;  */
+}
+
+/* buat ngilangin underline dari href */
+a{
+    text-decoration: none;
+}
