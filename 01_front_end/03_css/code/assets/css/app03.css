@@ -3,6 +3,7 @@ h1{
     font-weight: lighter;
     /* untuk color bisa juga pake hex #  */
     text-decoration: underline  cyan; 
+    font-size: 23px;
 
 }
 
