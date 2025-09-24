@@ -140,3 +140,4 @@ This resource provides a comprehensive color picker, conversion tools, and guide
 
 CSS offers versatile methods to define and apply colors, from simple named colors to precise RGB and hexadecimal values. Understanding how to use these color systems allows you to design visually appealing, accessible, and professional-looking web pages. Experimenting with RGB and hex values and leveraging tools such as HTML Color Codes can significantly enhance your color design workflow.
 
+> 📚 This is part of the CSS chapter.
