@@ -1,3 +1,14 @@
 h3{
     color: rgb(200, 0, 255);
+    background-color: rgb(0, 213, 255);
+}
+
+button{
+    color: blue;
+    background-color: cornsilk;
+}
+
+p{
+    color: white;
+    background-color: black;
 }
