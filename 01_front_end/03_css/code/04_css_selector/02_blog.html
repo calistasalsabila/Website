@@ -6,7 +6,8 @@
     <title>Quotes ORV</title>
     <style>
         /* class (.orv) bisa di ganti jadi section dll  */
-        .orv p{
+        /* pake > biar kalau misal ada p didalam dalamnya lagi ga kena efeknya  */
+        .orv > p{
             font-size: small;
             color: rgb(255, 0, 242);
         }
@@ -18,6 +19,10 @@
     <section class="quotes">
         <h3>Even if I had sacrifed the world, I will still save you</h3>
         <p>- <span>Han Sooyoung</span></p>
+        <!-- tetep warna hitam, even p didalam orv class (karena ada >)  -->
+        <div>
+            <p>Han Sooyoung to Dokja</p>
+        </div>
         <button>vote +</button>
     </section>
     <hr>
