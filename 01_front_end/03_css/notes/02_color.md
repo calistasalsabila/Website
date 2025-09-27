@@ -131,6 +131,7 @@ This produces white text on a black background.
 
 For more details, color charts, and advanced color tools, visit:
 [https://htmlcolorcodes.com/](https://htmlcolorcodes.com/)
+[https://colorhunt.co/](https://colorhunt.co/)
 
 This resource provides a comprehensive color picker, conversion tools, and guides to help you choose and implement colors effectively in CSS.
 
