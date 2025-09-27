@@ -11,10 +11,46 @@
             font-size: small;
             color: rgb(255, 0, 242);
         }
+
+        .orv > p:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        a + button{
+            background-color: rgb(162, 162, 239);
+        }
+
+        section button:hover{
+            background-color: aqua;
+        }
+
+        input[type="text"]{
+            color: blue;
+        }
+         /* 2n = kelipatan 2  */
+        section:nth-of-type(2n){
+            background-color: rgb(120, 237, 255);
+        }
+        /* : -> css versi 2 , :: -> css versi 3  */
+        section h3::first-letter{
+            font-size: medium;
+        }
+
+        section h3::after{
+            content: '.';
+        }
+
+        section p::first-line{
+            color: blue;
+        }
+
+
     </style>
 </head>
 <body>
     <h1>ORV Quotes</h1>
+    <input type="text" placeholder="search"> <button>search</button>
     <hr>
     <section class="quotes">
         <h3>Even if I had sacrifed the world, I will still save you</h3>
@@ -62,5 +98,7 @@
     </section>
 
     <p>Fandom nya hidup masak mc nya engga :(</p>
+    <a href="https://www.goodreads.com/quotes/tag/orv">ORV</a>
+    <button>agree</button>
 </body>
 </html>
