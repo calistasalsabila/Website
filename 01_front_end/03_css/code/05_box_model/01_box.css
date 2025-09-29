@@ -1,6 +1,16 @@
 div{
     width: 300px;
-    border: 15px solid blue;
     padding: 50px;
     margin: 40px;
 }
+
+div{
+    /* shortcut dari top right bottom left, ctrl + shift + p + join line  */
+    border-style: dashed; border-top-style: groove; border-right-style: double; border-bottom-style: ridge; border-left-style: inset;
+    /* top right bottom left  */
+    border-width: 5px, 15px, 10px, 5px;
+    border-top-width: 10px;
+    /* bisa juga per sisi border di buat beda warna  */
+    border-color: aqua;
+}
+
