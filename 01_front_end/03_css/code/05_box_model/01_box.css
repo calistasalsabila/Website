@@ -14,3 +14,20 @@ div{
     border-color: aqua;
 }
 
+div{
+    /* jarak border dengan text  */
+    /* padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px; */
+
+    /* vertikal, horizontal  */
+    /* padding: 10 px 40px; */
+
+    /* vertikal, horizontal bottom */
+    padding: 10px 100px 100px;
+
+
+
+}
+
