@@ -489,6 +489,7 @@ When migrating, test components and JavaScript behavior, and update custom code 
 
 * This guide focuses on core CSS patterns and common usage. For JavaScript behaviors (modals, tooltips, etc.) consult the official Bootstrap docs for API details and examples.
 * When building production sites, prefer compiling customized Sass to reduce CSS size and avoid unused utilities.
+[link bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ---
 
