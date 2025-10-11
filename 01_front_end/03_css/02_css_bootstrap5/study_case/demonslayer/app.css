@@ -4,6 +4,24 @@ body{
 }
 
 
-.custom-nav{
+#navbar{
+    font-size: 1.5rem;
+    font-weight:100;
+
     background-color: #2b463e !important;
 }
+
+#navbar .nav-link{
+    color: aliceblue;
+}
+
+
+#navbar .nav-link:hover{
+    color: rgb(143, 237, 251);
+}
+
+#navbar .navbar-brand{
+    color: rgb(247, 204, 204);
+    font-size: 1.5rem;
+}
+
