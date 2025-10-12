@@ -16,7 +16,7 @@
   </head>
 
   <body>
-        <nav class="navbar navbar-expand-lg bg-dark custom-nav" id="navbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark custom-nav" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">KnY</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,57 @@
                 </div>
             </div>
         </nav>
+        <!-- px -0 tu padding nya di hilangkan  -->
+        <section class="container-fluid px-0">
+
+            <div class="row align-items-center content" id="home">
+                <!-- kalo g pake lg (large) maksa di 2 kolom terus -->
+                <div class="col-lg-6">
+                    <div class="text-white text-center d-none d-lg-block" id="title-head" ><h1>Kimetsu No Yaiba</h1></div>  
+                </div>
+                <div class="col-lg-6">
+                    <!-- image fluid biar responsive  -->
+                    <img class="img-fluid" src="images/kny.jpg" alt="">
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+
+            <div class="row align-items-center content" id="about">   
+                <div class="col-md-6 order-2 order-md-1">
+                    <img class="img-fluid" src="images/tan.jpg" alt="">
+                </div>
+
+                <div class="col-md-6 text-center order-1">
+                    <!-- buat row kenapa? karena isinya tu dua konten judul ma title -->
+                     <!-- justify tu elemen dalam container , karena g ada elemen sebenarnya g terlalu ngaruh sih, emang g ngaruh sih -->
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb pt-3">
+                             <h2>Komado Tanjirou</h2>
+                            <img class="img-fluid d-none d-lg-inline" src="images/kt.jpg" height="60"  alt="">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam aperiam facere totam quidem esse modi voluptatibus iusto atque cumque, fuga, quasi est at ab, nostrum rem amet accusantium commodi!</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center content" id="ticket">   
+                <div class="col-md-6 order-2 order-md-1">
+                    <img class="img-fluid" src="images/giy.jpg" alt="">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <!-- buat row kenapa? karena isinya tu dua konten judul ma title -->
+                     <!-- justify tu elemen dalam container , karena g ada elemen sebenarnya g terlalu ngaruh sih, emang g ngaruh sih -->
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb pt-3">
+                             <h2>Komado Tanjirou</h2>
+                            <img class="img-fluid d-none d-lg-inline" src="images/kt.jpg" height="60"  alt="">
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam aperiam facere totam quidem esse modi voluptatibus iusto atque cumque, fuga, quasi est at ab, nostrum rem amet accusantium commodi!</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -48,6 +99,15 @@
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function (){
+            $(document).scroll(function (){
+                let $nav = $('#navbar')
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            })
+        })
     </script>
 
   </body>
