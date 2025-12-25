@@ -105,7 +105,7 @@ This section focuses on interacting with and manipulating the Document Object Mo
 
 ## Notes
 
-* This repository is dedicated to programming language documentation and learning materials.
+* This repository is dedicated to programming languages documentation and learning materials.
 * Related website or frontend projects may link to these directories instead of duplicating the content.
 * The documentation is written incrementally and may expand as new topics are added.
 
