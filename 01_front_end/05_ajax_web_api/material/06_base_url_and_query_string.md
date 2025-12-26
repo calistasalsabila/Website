@@ -224,5 +224,7 @@ Explanation:
 * [MDN: URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)
 * [MDN: URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
 * [RESTful API Design](https://restfulapi.net/)
+* [Query-String](https://www.tvmaze.com/api?utm_source=chatgpt.com)
+
 
 > 📚 This is part of the AJAX chapter.
