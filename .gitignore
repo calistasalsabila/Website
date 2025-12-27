@@ -1,0 +1,5 @@
+# dependencies
+node_modules/
+
+# tailwind build output (kalau mau)
+output.css
