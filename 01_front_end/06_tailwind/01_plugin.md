@@ -1,6 +1,6 @@
-# DaisyUI – Tailwind CSS Plugin
+# Tailwind CSS UI Ecosystem: DaisyUI & Tailwind UI
 
-This document explains **DaisyUI**, a popular **component library plugin for Tailwind CSS**. It focuses on what DaisyUI is, how it works, how to install it, and how it integrates with Tailwind’s utility-first approach.
+This document explains the **Tailwind CSS UI ecosystem**, focusing on **DaisyUI** and **Tailwind UI**. It covers their concepts, differences, installation approach, and how each integrates with Tailwind’s utility-first workflow.
 
 ---
 
@@ -245,6 +245,67 @@ It may not be ideal if:
 | Customization | Full control  | High but opinionated |
 | Readability   | Utility-heavy | More semantic        |
 | Theming       | Manual        | Built-in             |
+
+---
+
+## Tailwind UI
+
+### What is Tailwind UI?
+
+**Tailwind UI** is an **official premium component library** created by the Tailwind CSS team. Unlike DaisyUI, Tailwind UI provides **fully styled component examples** built purely with **Tailwind utility classes**, without introducing new semantic component classes.
+
+In short:
+
+* DaisyUI = Tailwind plugin with component classes
+* Tailwind UI = component examples using raw Tailwind utilities
+
+---
+
+### Key Characteristics
+
+* Paid product (subscription/license)
+* Officially maintained by Tailwind CSS creators
+* Uses only Tailwind utility classes
+* No additional plugins required
+* Focused on production-ready UI patterns
+
+---
+
+### How Tailwind UI Works
+
+Tailwind UI does **not** extend Tailwind via plugins.
+
+Instead, it provides:
+
+* Copy-paste component code
+* Layouts, forms, navigation, dashboards
+* Accessibility-friendly markup
+
+You manually integrate the provided code into your project.
+
+---
+
+### Example (Tailwind UI Style)
+
+```html
+<button class="inline-flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+  Button
+</button>
+```
+
+This approach keeps everything explicit and utility-driven.
+
+---
+
+### Tailwind UI vs DaisyUI
+
+| Aspect        | DaisyUI                             | Tailwind UI       |
+| ------------- | ----------------------------------- | ----------------- |
+| Type          | Tailwind plugin                     | Component library |
+| Pricing       | Free                                | Paid              |
+| Class Style   | Semantic components (`btn`, `card`) | Pure utilities    |
+| Theming       | Built-in themes                     | Manual theming    |
+| Customization | Fast but opinionated                | Very flexible     |
 
 ---
 
