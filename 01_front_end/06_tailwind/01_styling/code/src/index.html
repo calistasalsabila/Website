@@ -9,28 +9,97 @@
      <link href="./output.css" rel="stylesheet">
   </head>
   <body>
-    <header>
 
+    <header class="px-20 py-4 shadow bg-[#1FBBA6] text-white">
+      <div class="flex justify-between">
+        <h1 class="text-2xl">CODE <span class="font-extrabold">CODE</span></h1>
+        <nav class="space-x-6 text-lg">
+          <a href="#">why</a>
+          <a href="#">what</a>
+          <a href="#">how</a>
+        </nav>
+      </div>
     </header>
+
     <!-- hero section atau katakanlah bagian awal website yang pertama kali muncul, ga perlu di scroll -->
-    <section>
-
+    <section class="pt-40 pb-24 px-20 text-center">
+      <div>
+        <h2 class="text-4xl font-bold leading-tight mb-4">belajar <span class=" text-[#1FBBA6] ">belajar</span> belajar</h2>
+        <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sint est accusamus architecto, porro corrupti labore, dolorum nesciunt voluptatem tempore, excepturi atque accusantium quod id iusto quae quasi. Ipsam, quidem.</p>
+      </div>
+      <div class="mt-15">
+        <a href="" class="px-6 py-3 bg-[#fcfdfd] rounded-2xl hover:bg-gray-700 border-4 border-[#1FBBA6] hover:text-white hover:border-none">lihat</a>
+        <a href="" class="px-6 py-3 bg-[#1FBBA6] rounded-2xl hover:bg-gray-700  text-white">join</a>
+      </div>
     </section>
-    <!-- kenapa section -->
-    <section>
 
-    </section>\
+    <!-- kenapanya section -->
+     <!-- kalo card card bagusnya pake grid -->
+      <section class="py-24 px-20 bg-gray-50">
+        <div class="px-6"> <!-- WRAPPER UTAMA -->
+          <h2 class="text-4xl font-bold text-center mb-6">
+          Kenapa Harus Belajar?
+          </h2>
+
+      <div class="grid md:grid-cols-3 gap-4"> <!-- GRID CONTAINER -->
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-[#1FBBA6] "> <!-- CARD 1 -->
+          <h3 class="text-xl font-semibold mb-4">Belajar</h3>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla id fugiat blanditiis sequi nam fuga reprehenderit, optio aliquam omnis itaque saepe, quidem voluptatem, temporibus esse dolorem? Fugit, sed doloremque.
+          </p>
+        </div> <!-- END CARD 1 -->
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl"> <!-- CARD 2 -->
+          <h3 class="text-xl font-semibold mb-4">belajar</h3>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sequi mollitia ullam odio libero veniam dignissimos molestias minima dolorum, maxime, voluptatibus cumque id fuga quod eum quibusdam maiores sapiente. Nobis!
+          </p>
+        </div> <!-- END CARD 2 -->
+
+        <div class="bg-white p-6 rounded-lg shadow-lg"> <!-- CARD 3 -->
+          <h3 class="text-xl font-semibold mb-4">belajar</h3>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quam laudantium. Nulla dolorum consequuntur reprehenderit amet ratione minima iste neque. Debitis labore harum dicta, voluptas quis nihil natus minima esse.
+          </p>
+        </div> <!-- END CARD 3 -->
+
+      </div> <!-- END GRID -->
+
+    </div> <!-- END WRAPPER -->
+  </section>
+
     <!-- keunggulan section -->
-    <section>
+   <section class="py-24 px-20">
+    <div class="px-6">
+      <h2 class="text-2xl font-bold text-center mb-6">Keunggulan Belajar</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">smart</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates recusandae nobis eos laborum quibusdam adipisci possimus aut pariatur, culpa praesentium. Rerum quia labore reprehenderit! Sequi, saepe nobis. Magnam, quos ipsam.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">menambah ilmu</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, cumque vel temporibus voluptatem rem cupiditate reprehenderit tenetur earum nihil, iusto esse fugit, neque veniam. Quis tempora ipsa neque consequuntur sequi?</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">fun</h3>
+          <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quod? Doloremque a obcaecati nihil suscipit officia, voluptatem sunt eos earum necessitatibus sed consectetur at distinctio. Dolor culpa libero repudiandae temporibus!p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-     </section>
     <!-- CTA section -->
-    <section>
-
+    <section class="py-15 text-center px-20 bg-[#1FBBA6] text-white ">
+      <h2 class="text-2xl text-center font-bold mb-4">Ayo belajar?</h2>
+      <p class="mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ipsum nulla quo dolores corporis amet distinctio adipisci obcaecati repellendus libero maiores commodi ad recusandae et quisquam odit debitis, ex molestiae?</p>
+      <a href="#" class="bg-white text-[#1FBBA6]  py-3 px-6 rounded hover:bg-gray-700 hover:text-white transition duration font-semibold">daftar sekarang</a>
      </section>
-    <!-- footer -->
-    <footer>
 
+    <!-- footer -->
+    <footer class="py-6 text-center text-sm mt-12 text-gray-500">
+      <p>&copy; 2025 Excercise</p>
     </footer>
   </body>
-</html>
+</html> 
