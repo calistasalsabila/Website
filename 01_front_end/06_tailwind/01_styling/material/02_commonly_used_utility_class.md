@@ -147,3 +147,6 @@ Save the file and Tailwind will automatically regenerate `output.css`.
 --- 
 ## Addition
 ![commonly used utilities](../material/image/01.png)
+
+
+> 📚 This is part of the Tailwinds chapter.
