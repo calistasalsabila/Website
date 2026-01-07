@@ -3,3 +3,31 @@ node_modules/
 
 # tailwind build output (kalau mau)
 output.css
+
+
+# Node modules (dependency hasil install)
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Cache
+.eslintcache
