@@ -1,47 +1,63 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref } from 'vue'
+
+const count = ref(0);
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+   <main>
+        <h1>Counter</h1>
+        <span id="value">{{ count }}</span>
+        <div>
+            <button id="decrement" @click="count--">-</button>
+            <button id="increment" @click="count++">+</button>
+        </div>
+    </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+  main{
+    text-align: center;
+    outline: 2px solid aqua;
+    border-radius: 8px;
+    padding: 30px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#value{
+    font-size: 50px;
+    
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+button {
+    font-size: 16px;
+    margin: 0 5px;
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+button:hover{
+    background-color: aqua;
+    color: black;
+    animation: pulse 2s infinite;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
 }
 </style>
