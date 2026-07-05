@@ -8,7 +8,8 @@ function Homepage(){
             <h1>Simple Blog</h1>
             {
                 posts.map(({title, tags, aka})=>(
-                    <Article title={title} tags={tags} aka={aka} />
+                    // <Article title={title} tags={tags} aka={aka} />
+                    <Article {...{title, tags, aka}} />
                 ))
             }
         </>
