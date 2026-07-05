@@ -1,13 +1,12 @@
 import './App.css'
-import Article from './componennts/Article'
+import Home from './pages/Index'
+
 function App() {
 
   return (
     <>
       <div className="ticks">
-        <Article name="Calista" titles={["dokja", "hamin", "peter"]}/>
-        <br />
-        <Article name="Iscal" titles={["dino", "apato"]} />
+        <Home/> 
       </div>
     </>
   )
