@@ -7,8 +7,14 @@ function Article(){
     return(
         <>
             <div>{name}</div>
-            <div>{title.map((title => 
-                <div>{title}</div>
+            <div>{title.map((title => {
+                return (
+                    <>
+                    <div>{title}</div>
+                    <div>{title}</div>
+                    </>   
+                )
+            }
             ))}</div>
         </>
     )
