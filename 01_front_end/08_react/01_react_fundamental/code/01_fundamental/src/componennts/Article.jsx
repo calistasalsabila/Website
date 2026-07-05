@@ -1,22 +1,12 @@
-function Article(){
-    const name = "Caltherion";
-    const title = ["orv", "kp", "tog"];
-
-    // title.map(item => item);
-
+function Article(props){
     return(
         <>
-            <div>{name}</div>
-            <div>{title.map((title => {
-                return (
-                    <>
-                    <div>{title}</div>
-                    <div>{title}</div>
-                    </>   
-                )
-            }
-            
-            ))}</div>
+            <div>{props.name}</div>
+            <div>
+                {props.titles.map((titles) => {
+                    return <div>{titles}</div>
+                })}
+            </div>
         </>
     )
 }

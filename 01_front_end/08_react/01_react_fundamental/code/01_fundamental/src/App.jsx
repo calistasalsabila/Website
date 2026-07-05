@@ -5,8 +5,9 @@ function App() {
   return (
     <>
       <div className="ticks">
-        <Article></Article>
-      
+        <Article name="Calista" titles={["dokja", "hamin", "peter"]}/>
+        <br />
+        <Article name="Iscal" titles={["dino", "apato"]} />
       </div>
     </>
   )
