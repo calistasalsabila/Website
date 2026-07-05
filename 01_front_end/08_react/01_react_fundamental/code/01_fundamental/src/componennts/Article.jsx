@@ -3,10 +3,10 @@ function Article(){
     const title = ["orv", "kp", "tog"];
 
     return(
-        <div>
+        <>
             <div>{name}</div>
             <div>{title}</div>
-        </div>
+        </>
     )
 }
 
