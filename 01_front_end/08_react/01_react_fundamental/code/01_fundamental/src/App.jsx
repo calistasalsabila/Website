@@ -6,8 +6,7 @@ function App() {
     <>
       <div className="ticks">
         <Article></Article>
-        <Article></Article>
-        <Article></Article>
+      
       </div>
     </>
   )
