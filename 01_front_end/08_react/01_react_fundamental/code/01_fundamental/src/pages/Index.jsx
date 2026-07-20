@@ -1,23 +1,28 @@
 import { useState } from "react";
-import posts from "../posts.json"
+import postsData from "../posts.json"
 import Article from "../componennts/Article"
+import Search from "../componennts/Search";
 
 
 function Homepage(){
 
-    const [search, setSearch] = useState("");
-    const changeSearch = (event) => {
-        setSearch(event.target.value);
+    const [posts, setPosts] = useState(postsData)
+
+    const onSearchChange = (value) => {
+        console.log(value)
+        const filteredPost = postsData.filter(item => item.title.includes(value)) 
+        // ini ga assign karena use state termasuk ke dalam function bukan variable
+        setPosts(filteredPost)
     }
     return(
         <>
             <h1>Simple Blog</h1>
-            <div>Cari Article : <input onChange={changeSearch}></input></div>
-            <small>ditemukan 0 data dengan pencarian kata {search}</small>
+            // function dari props nya
+            <Search onSearchChange={onSearchChange}/>
             {
-                posts.map(({title, tags, aka}, index)=>(
+                posts.map((props, index)=>(
                     // <Article title={title} tags={tags} aka={aka} />
-                    <Article {...{title, tags, aka}} key={index} />
+                    <Article {...props} key={index} />
                 ))
             }
         </>
