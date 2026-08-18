@@ -2,18 +2,21 @@
     {
         "title": "ORV",
         "tags": ["dokja", "jeha"],
-        "aka" : ["reader", "protagonis"]
+        "aka" : ["reader", "protagonis"],
+        "isNew": true
     },
 
     {
         "title": "KP",
         "tags": ["peter", "alipede"],
-        "aka" : ["apostele12", "apostlenew"]
+        "aka" : ["apostele12", "apostlenew"],
+        "isNew": false
     },
 
     {
         "title": "E",
         "tags": ["jiwoo", "kayden"],
-        "aka" : ["mc", "meow"]
+        "aka" : ["mc", "meow"],
+        "isNew": false
     }
 ]
