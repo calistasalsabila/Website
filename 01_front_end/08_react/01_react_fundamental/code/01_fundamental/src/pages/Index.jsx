@@ -6,19 +6,21 @@ import Search from "../componennts/Search";
 
 function Homepage(){
 
-    const [posts, setPosts] = useState(postsData)
+    const [posts, setPosts] = useState(postsData);
+    const [totalPosts, setTotalPosts] = useState(0);
 
     const onSearchChange = (value) => {
         console.log(value)
         const filteredPost = postsData.filter(item => item.title.includes(value)) 
         // ini ga assign karena use state termasuk ke dalam function bukan variable
         setPosts(filteredPost)
+        setTotalPosts(filteredPost.length);
     }
     return(
         <>
             <h1>Simple Blog</h1>
             // function dari props nya
-            <Search onSearchChange={onSearchChange}/>
+            <Search onSearchChange={onSearchChange} totalPosts={totalPosts}/>
             {
                 posts.map((props, index)=>(
                     // <Article title={title} tags={tags} aka={aka} />
