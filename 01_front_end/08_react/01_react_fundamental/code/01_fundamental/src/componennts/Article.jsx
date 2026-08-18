@@ -1,5 +1,5 @@
 const ArticleStatus = ({isNew}) => {
-    return isNew && <span>-- baruu!</span>
+    return isNew && <span>-- baruu!</span> 
 }
 
 const NewArticle = () => {
