@@ -3,7 +3,7 @@ import Home from './pages/Index'
 
 function App() {
 
-  const value = false;
+  const value = true;
   return (
     <>
       <div className="ticks">
