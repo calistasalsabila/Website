@@ -27,11 +27,17 @@ function Homepage(){
     // }, [posts]) // dikasi array kosong biar cuma berjalan sekali saat pertama kali di render ; intinya apa yang berubah dari di dalam kurung
 
     useEffect(() => {
+        console.log('fetch jalan');
         fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
         .then(json => setExternalPosts (json))
 
     }, [])
+
+    // pantau postnya termasuk ke dalam multiple useEffect karena menggunakan lebih dari satu 
+    useEffect(() => {
+        console.log("ada post baru")
+    }, [posts])
 
     return(
         <>
