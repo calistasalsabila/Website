@@ -8,6 +8,7 @@ function Homepage(){
 
     const [posts, setPosts] = useState(postsData);
     const [totalPosts, setTotalPosts] = useState(0);
+    const [externalPosts, setExternalPosts] = useState([]);
 
     const onSearchChange = (value) => {
         console.log(value)
@@ -17,13 +18,20 @@ function Homepage(){
         setTotalPosts(filteredPost.length);
     }
 
-    useEffect(() => {
-        console.log("render");
+    // useEffect(() => {
+    //     console.log("render");
 
-        return () => {
-            console.log("clean up");
-        }
-    }, [posts]) // dikasi array kosong biar cuma berjalan sekali saat pertama kali di render ; intinya apa yang berubah dari di dalam kurung
+    //     return () => {
+    //         console.log("clean up");
+    //     }
+    // }, [posts]) // dikasi array kosong biar cuma berjalan sekali saat pertama kali di render ; intinya apa yang berubah dari di dalam kurung
+
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response => response.json())
+        .then(json => setExternalPosts (json))
+
+    }, [])
 
     return(
         <>
@@ -36,6 +44,12 @@ function Homepage(){
                     <Article {...props} key={index} />
                 ))
             }
+
+            <hr />
+            <h2>External Posts</h2>
+            {externalPosts.map((item, index) => (
+                <div key={index}>- {item.title}</div>
+            ))}
         </>
     )
 }
